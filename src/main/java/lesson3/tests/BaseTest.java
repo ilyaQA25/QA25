@@ -17,22 +17,22 @@ public class BaseTest {
 
     @BeforeTest
     public void beforeTest(){
-        System.out.println("beforeSuite");
+        System.out.println("beforeTest");
     }
 
     @BeforeClass
     public void beforeClass(){
-        System.out.println("beforeSuite");
+        System.out.println("beforeClass");
     }
 
     @BeforeMethod
     public void beforeMethod(){
-        System.out.println("beforeSuite");
+        System.out.println("beforeMethod");
     }
 
     @BeforeGroups
     public void beforeGroups(){
-        System.out.println("beforeSuite");
+        System.out.println("beforeGroups");
     }
 
 
