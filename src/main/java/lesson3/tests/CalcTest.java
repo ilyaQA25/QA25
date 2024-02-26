@@ -8,7 +8,7 @@ public class CalcTest extends BaseTest {
     @Test
     public void testSum(){
         Assert.assertEquals(calculator.sum(3,4),7, "wrong sum");
-        counter++;
+
     }
     @Test(dataProvider = "dataForSum", dataProviderClass = DataProvider.class, threadPoolSize = 3)
     public void testDataProvider(int a, int b, int expectedresult) throws InterruptedException{
