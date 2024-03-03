@@ -1,12 +1,12 @@
 package lesson3.tests;
 
 public class DataProvider {
-    @org.testng.annotations.DataProvider(name = "dataForSum", parallel = true)
-    public static Object[][] dataForSumTest (){
+    @org.testng.annotations.DataProvider(name = "dataForDiv", parallel = true)
+    public static Object[][] dataForDivTest (){
         return new Object[][]{
-                {-3,-4,-7},
-                {0,0,0,},
-                {3,4,7}
+                {-3.0,-4.0, 0.75},
+                {15.,0,5,},
+                {16.0,4.0,4.0}
         };
     }
 }
