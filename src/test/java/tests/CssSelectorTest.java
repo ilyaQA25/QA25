@@ -23,17 +23,17 @@ public class CssSelectorTest {
 
     @Test
     public void cssSelectorsTest() {
-        driver.get("file:/Users/aleksandr/Documents/Work/TechMeSkills/CODE_AQA18/TAF_AQA18/src/test/resources/index.html");
+        driver.get("file:/Users/Ilya/IdeaProjects/automation_2.0/src/test/resources/index.html");
 
         // Поиск по id
         Assert.assertTrue(driver.findElement(By.cssSelector("#my-Address")).isDisplayed());
-        Assert.assertTrue(driver.findElement(By.id("my-Address")).isDisplayed());               // Аналог
+        Assert.assertTrue(driver.findElement(By.id("my-Address")).isDisplayed());              // Аналог
 
-        // Поиск по class name
+      // Поиск по class name
         Assert.assertTrue(driver.findElement(By.cssSelector(".newsletter")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.className("newsletter")).isDisplayed());        // Аналог
 
-        // Поиск по нескольким значения в аттрибуте class
+       // Поиск по нескольким значения в аттрибуте class
         Assert.assertTrue(driver.findElement(By.cssSelector(".noSel.newsletter")).isDisplayed());
 
         // Поиск по tag name
@@ -44,9 +44,12 @@ public class CssSelectorTest {
         Assert.assertTrue(driver.findElement(By.cssSelector("div.intro")).isDisplayed());
 
         // Использование 2х уровневой иерархии для поиска дочернего элемента
+        //WebElement parent  = driver.findElement(By.id("helpIntro"));
+        //WebElement child = parent.findElement(By.tagName("div"));
         Assert.assertEquals(2, driver.findElements(By.cssSelector("#Lastname .markup")).size());
 
-        // Использование 3х уровневой иерархии для поиска дочернего элемента
+
+       // Использование 3х уровневой иерархии для поиска дочернего элемента
         Assert.assertEquals(2, driver.findElements(By.cssSelector("body .table .content-inner")).size());
 
         // Поиск всех элементов с тэгом h1 или p
@@ -58,7 +61,7 @@ public class CssSelectorTest {
         // Поиск всех элементов с тэгом p которые идут сразу за элементом с тэго ul
         Assert.assertEquals(1, driver.findElements(By.cssSelector("ul + p")).size());
 
-        // Поиск всех элементов с тэгом div которые являются братьями элементу с тэгом p
+        // Поиск всех элементов с тэгом div которые являются братьями элементу с тэгом p и идут после тэга p
         Assert.assertEquals(2, driver.findElements(By.cssSelector("p ~ div")).size());
 
         // Поиск всех элементов у которых присутствует аттрибут title
