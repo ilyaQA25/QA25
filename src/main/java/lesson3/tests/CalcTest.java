@@ -62,10 +62,10 @@ public class CalcTest extends BaseTest {
     }
 
     @Test(dataProvider = "dataForDiv", dataProviderClass = DataProvider.class, threadPoolSize = 3)
-    public void testDataProvider (double a, double b, double expectedresult) throws ArithmeticException {
+    public void testDataProvider (int a, int b, int expectedresult) throws ArithmeticException {
         try {
             Assert.assertEquals(calculator.div(a, b), expectedresult, "wrong div");
-        } catch (AssertionError error) {
+        } catch (ArithmeticException error) {
             System.out.println("b == 0");
         }
     }
