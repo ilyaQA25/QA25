@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 public class CalcTest extends BaseTest {
 
-    //как проверить деление на ноль для double?
     @Test()
     public void testDivInt () {
         try {
