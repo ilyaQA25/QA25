@@ -2,11 +2,11 @@ package lesson3.tests;
 
 public class DataProvider {
     @org.testng.annotations.DataProvider(name = "dataForDiv", parallel = true)
-    public static Object[][] dataForSumTest (){
+    public static Object[][] dataForDivTest (){
         return new Object[][]{
-                {-3,-4, 0},
-                {15,3,5,},
-                {3,4,0}
+                {8,4, 2},
+                {15,0,5},
+                {16,4,4}
         };
     }
 }
