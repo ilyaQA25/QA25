@@ -13,7 +13,6 @@ public class CalcTest extends BaseTest {
         } catch (ArithmeticException e) {
             System.out.println("b == 0");
         }
-
     }
 
     @Test()
@@ -28,7 +27,6 @@ public class CalcTest extends BaseTest {
         } catch (AssertionError error) {
             System.out.println(error);
         }
-
     }
 
     @Test(enabled = false)
@@ -47,7 +45,6 @@ public class CalcTest extends BaseTest {
         } catch (ArithmeticException e) {
             System.out.println("b == 0");
         }
-
     }
 
     @Test(description = "just a description")
