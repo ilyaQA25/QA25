@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import services.BrowsersService;
 
-public class XPathSelectorsTest {
+public class  XPathSelectorsTest {
     private WebDriver driver;
 
     private static final String absolutePath = "/html/body/div";
