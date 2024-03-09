@@ -1,7 +1,6 @@
 package tests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -43,17 +42,61 @@ public class SmokeTest {
 
         driver.switchTo().frame(1);
 
-        WebElement selectWebElement = driver.findElement(By.id("cr-size"));
-        Select selectSex = new Select(selectWebElement);
+        WebElement selectWebElementKrea = driver.findElement(By.id("cr-size"));
+        Select selectKrea = new Select(selectWebElementKrea);
+
+
+        WebElement selectWebElementSex = driver.findElement(By.id("sex"));
+        Select selectSex = new Select(selectWebElementSex);
+
+        WebElement selectWebElementRace  = driver.findElement(By.id("race"));
+        Select selectRace = new Select(selectWebElementRace);
 
         selectSex.selectByIndex(1);
         Thread.sleep(2000);
 
-        selectSex.selectByValue("mm");
+        selectSex.selectByValue("M");
         Thread.sleep(2000);
 
-        selectSex.selectByVisibleText("мг/дл");
+        selectKrea.selectByVisibleText("мг/дл");
         Thread.sleep(2000);
+
+        selectRace.selectByValue("N");
+        Thread.sleep(2000);
+
+        WebElement age  = driver.findElement(By.id("age"));
+        age.sendKeys("21");
+        Thread.sleep(2000);
+
+        WebElement kreatin  = driver.findElement(By.name("cr"));
+        kreatin.sendKeys("500");
+        Thread.sleep(2000);
+
+        WebElement mass = driver.findElement(By.name("mass"));
+        mass.sendKeys("89");
+        Thread.sleep(2000);
+
+        WebElement height = driver.findElement(By.name("grow"));
+        height.sendKeys("189");
+        Thread.sleep(2000);
+
+        WebElement button = driver.findElement(By.xpath("/html/body/form/p[7]/button"));
+        button.click();
+        Thread.sleep(2000);
+
+        WebElement resultMDRD = driver.findElement(By.id("mdrd"));
+        Assert.assertEquals(resultMDRD.getText(), "0.09 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
+
+        WebElement resultSKDEPI = driver.findElement(By.id("ckd_epi"));
+        Assert.assertEquals(resultSKDEPI.getText(),"0.07 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
+
+        WebElement resultCGE = driver.findElement(By.id("cge"));
+        Assert.assertEquals(resultCGE.getText(),"0.29 мл/мин");
+
+        WebElement resultSchwartz = driver.findElement(By.id("schwartz"));
+        Assert.assertEquals(resultSchwartz.getText(),"0.27 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
+
+
     }
 
 
