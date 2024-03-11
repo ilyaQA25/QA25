@@ -33,7 +33,7 @@ public class ValidateSKF {
         WebElement selectWebElementSex = driver.findElement(By.id("sex"));
         Select selectSex = new Select(selectWebElementSex);
 
-        WebElement selectWebElementRace  = driver.findElement(By.id("race"));
+        WebElement selectWebElementRace = driver.findElement(By.id("race"));
         Select selectRace = new Select(selectWebElementRace);
 
         selectSex.selectByIndex(1);
@@ -48,11 +48,11 @@ public class ValidateSKF {
         selectRace.selectByValue("N");
         Thread.sleep(2000);
 
-        WebElement age  = driver.findElement(By.id("age"));
+        WebElement age = driver.findElement(By.id("age"));
         age.sendKeys("21");
         Thread.sleep(2000);
 
-        WebElement kreatin  = driver.findElement(By.name("cr"));
+        WebElement kreatin = driver.findElement(By.name("cr"));
         kreatin.sendKeys("500");
         Thread.sleep(2000);
 
@@ -72,15 +72,15 @@ public class ValidateSKF {
         Assert.assertEquals(resultMDRD.getText(), "0.09 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
 
         WebElement resultSKDEPI = driver.findElement(By.id("ckd_epi"));
-        Assert.assertEquals(resultSKDEPI.getText(),"0.07 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
+        Assert.assertEquals(resultSKDEPI.getText(), "0.07 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
 
         WebElement resultCGE = driver.findElement(By.id("cge"));
-        Assert.assertEquals(resultCGE.getText(),"0.29 мл/мин");
+        Assert.assertEquals(resultCGE.getText(), "0.29 мл/мин");
 
         WebElement resultSchwartz = driver.findElement(By.id("schwartz"));
-        Assert.assertEquals(resultSchwartz.getText(),"0.27 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
-
+        Assert.assertEquals(resultSchwartz.getText(), "0.27 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
     }
+
     @AfterMethod
     public void tearDown() {
         driver.quit();
