@@ -37,7 +37,7 @@ public class ValidateSKF {
         Select selectRace = new Select(selectWebElementRace);
 
         selectSex.selectByIndex(1);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         selectSex.selectByValue("M");
         Thread.sleep(2000);

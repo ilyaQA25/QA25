@@ -77,7 +77,7 @@ public class MyLaminateTest {
         WebElement reqiredPackageLaminat = driver.findElement(By.xpath("//*[@id=\"calc\"]/div[1]/div[2]/div[2]"));
         Assert.assertEquals(reqiredPackageLaminat.getText(), "Количество упаковок ламината: 5");
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
     }
 
     @AfterMethod
