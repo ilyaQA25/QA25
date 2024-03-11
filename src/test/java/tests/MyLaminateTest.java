@@ -68,10 +68,10 @@ public class MyLaminateTest {
         buttonCalculate.click();
         Thread.sleep(2000);
 
-        WebElement reqiredDiesresult = driver.findElement(By.xpath("//*[@id=\"calc\"]/div[1]/div[2]/div[1]"));
+        WebElement reqiredDiesresult = driver.findElement(By.xpath("//*[contains(text(), 'Требуемое количество плашек ламината:')]"));
         Assert.assertEquals(reqiredDiesresult.getText(), "Требуемое количество плашек ламината: 95");
 
-        WebElement reqiredPackageLaminat = driver.findElement(By.xpath("//*[@id=\"calc\"]/div[1]/div[2]/div[2]"));
+        WebElement reqiredPackageLaminat = driver.findElement(By.xpath("//*[contains(text(), 'Количество упаковок ламината:')]"));
         Assert.assertEquals(reqiredPackageLaminat.getText(), "Количество упаковок ламината: 5");
 
         Thread.sleep(2000);

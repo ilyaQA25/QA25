@@ -64,7 +64,7 @@ public class ValidateSKF {
         height.sendKeys("189");
         Thread.sleep(2000);
 
-        WebElement button = driver.findElement(By.xpath("/html/body/form/p[7]/button"));
+        WebElement button = driver.findElement(By.xpath("//button[contains(text(), 'Рассчитать')]"));
         button.click();
         Thread.sleep(2000);
 
