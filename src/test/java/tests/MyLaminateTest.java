@@ -22,7 +22,7 @@ public class MyLaminateTest {
     @Test
     public void LaminateCalc() throws InterruptedException {
         driver.get("https://home-ex.ru/calculation/");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement roomLength = driver.findElement(By.id("ln_room_id"));
         roomLength.clear();
