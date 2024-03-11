@@ -40,7 +40,7 @@ public class ValidateSKF {
         Thread.sleep(1000);
 
         selectSex.selectByValue("M");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         selectKrea.selectByVisibleText("мг/дл");
         Thread.sleep(2000);
