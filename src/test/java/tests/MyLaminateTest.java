@@ -44,7 +44,6 @@ public class MyLaminateTest {
         dieWidth.sendKeys("290");
         Thread.sleep(2000);
 
-
         WebElement dieInPackage = driver.findElement(By.id("n_packing"));
         dieInPackage.clear();
         dieInPackage.sendKeys("20");
@@ -65,11 +64,9 @@ public class MyLaminateTest {
         typeOfStowage.selectByIndex(1);
         Thread.sleep(2000);
 
-
         WebElement buttonCalculate = driver.findElement(By.id("btn_calculate"));
         buttonCalculate.click();
         Thread.sleep(2000);
-
 
         WebElement reqiredDiesresult = driver.findElement(By.xpath("//*[@id=\"calc\"]/div[1]/div[2]/div[1]"));
         Assert.assertEquals(reqiredDiesresult.getText(), "Требуемое количество плашек ламината: 95");
