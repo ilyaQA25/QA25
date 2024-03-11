@@ -96,7 +96,6 @@ public class SmokeTest {
         WebElement resultSchwartz = driver.findElement(By.id("schwartz"));
         Assert.assertEquals(resultSchwartz.getText(),"0.27 мл/мин/1.73м2 - Терминальная почечная недостаточность (C5)");
 
-
     }
 
 
