@@ -60,8 +60,6 @@ public class SauceDemo {
         Assert.assertTrue(driver.findElement(By.cssSelector("[class^='inv']")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.cssSelector("div[id$='er']")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.cssSelector("button[data-test*='car']")).isDisplayed());
-
-
     }
 
     @AfterMethod
