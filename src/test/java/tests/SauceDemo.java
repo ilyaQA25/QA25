@@ -17,8 +17,6 @@ public class SauceDemo {
     public void setUp() {
         BrowsersService browsersService = new BrowsersService();
         driver = browsersService.getDriver();
-
-
     }
 
     @Test
