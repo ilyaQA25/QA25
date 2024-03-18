@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
-    // Блок описания селекторов для элементов
-    private By emailInputLocator = By.id("name");
-    private By pswInputLocator = By.id("password");
-    private By logInButtonLocator = By.id("button_primary");
+    // Блок описания локаторов для элементов
+    private final By emailInputLocator = By.id("name");
+    private final By pswInputLocator = By.id("password");
+    private final By logInButtonLocator = By.id("button_primary");
     private By errorTextLocator = By.className("error-text");
 
     // Блок иницализации
