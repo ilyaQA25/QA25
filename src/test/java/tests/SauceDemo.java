@@ -52,6 +52,9 @@ public class SauceDemo {
         Assert.assertTrue(driver.findElement(By.cssSelector("button")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.cssSelector("div.inventory_item")).isDisplayed());
 
+        Assert.assertTrue(driver.findElement(By.cssSelector("[data-test*='sort']")).isDisplayed());
+
+
         Assert.assertTrue(driver.findElement(By.cssSelector("[class='pricebar']")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.cssSelector("[alt~='Sauce']")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.cssSelector("[class|='bm']")).isDisplayed());
