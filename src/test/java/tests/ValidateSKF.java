@@ -50,7 +50,7 @@ public class ValidateSKF {
 
         WebElement age = driver.findElement(By.id("age"));
         age.sendKeys("21");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement kreatin = driver.findElement(By.name("cr"));
         kreatin.sendKeys("500");
