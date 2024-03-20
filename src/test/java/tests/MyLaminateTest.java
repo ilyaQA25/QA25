@@ -42,7 +42,7 @@ public class MyLaminateTest {
         WebElement dieWidth = driver.findElement(By.id("wd_lam_id"));
         dieWidth.clear();
         dieWidth.sendKeys("290");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement dieInPackage = driver.findElement(By.id("n_packing"));
         dieInPackage.clear();

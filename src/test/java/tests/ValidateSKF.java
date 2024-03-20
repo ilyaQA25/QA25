@@ -43,7 +43,7 @@ public class ValidateSKF {
         Thread.sleep(1000);
 
         selectKrea.selectByVisibleText("мг/дл");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         selectRace.selectByValue("N");
         Thread.sleep(1000);
