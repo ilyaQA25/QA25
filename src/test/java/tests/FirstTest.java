@@ -2,9 +2,6 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-import services.AdvancedDriver;
-import services.BrowsersService;
-import services.SimpleDriver;
 
 public class FirstTest {
 
