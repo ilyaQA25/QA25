@@ -46,7 +46,7 @@ public class ValidateSKF {
         Thread.sleep(2000);
 
         selectRace.selectByValue("N");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement age = driver.findElement(By.id("age"));
         age.sendKeys("21");
