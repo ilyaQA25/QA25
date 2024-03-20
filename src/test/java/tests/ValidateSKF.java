@@ -21,7 +21,7 @@ public class ValidateSKF {
     @Test
     public void validateSKF() throws InterruptedException {
         driver.get("https://bymed.top/calc/%D1%81%D0%BA%D1%84-2148");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         driver.switchTo().frame(1);
 
@@ -49,7 +49,7 @@ public class ValidateSKF {
 
         WebElement age = driver.findElement(By.id("age"));
         age.sendKeys("21");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement kreatin = driver.findElement(By.name("cr"));
         kreatin.sendKeys("500");
