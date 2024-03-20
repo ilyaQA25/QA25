@@ -22,7 +22,7 @@ public class MyLaminateTest {
     @Test
     public void LaminateCalc() throws InterruptedException {
         driver.get("https://home-ex.ru/calculation/");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement roomLength = driver.findElement(By.id("ln_room_id"));
         roomLength.clear();
@@ -32,7 +32,7 @@ public class MyLaminateTest {
         WebElement roomWidth = driver.findElement(By.id("wd_room_id"));
         roomWidth.clear();
         roomWidth.sendKeys("1300");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement dieLength = driver.findElement(By.id("ln_lam_id"));
         dieLength.clear();
@@ -68,10 +68,10 @@ public class MyLaminateTest {
         buttonCalculate.click();
         Thread.sleep(2000);
 
-        WebElement reqiredDiesresult = driver.findElement(By.xpath("//*[contains(text(), 'Требуемое количество плашек ламината:')]"));
+        WebElement reqiredDiesresult = driver.findElement(By.xpath("//div[contains(text(), 'Требуемое количество плашек ламината:')]"));
         Assert.assertEquals(reqiredDiesresult.getText(), "Требуемое количество плашек ламината: 95");
 
-        WebElement reqiredPackageLaminat = driver.findElement(By.xpath("//*[contains(text(), 'Количество упаковок ламината:')]"));
+        WebElement reqiredPackageLaminat = driver.findElement(By.xpath("//div[contains(text(), 'Количество упаковок ламината:')]"));
         Assert.assertEquals(reqiredPackageLaminat.getText(), "Количество упаковок ламината: 5");
 
         Thread.sleep(2000);
