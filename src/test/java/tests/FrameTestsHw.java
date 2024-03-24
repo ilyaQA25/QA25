@@ -2,22 +2,22 @@ package tests;
 
 import baseEntities.BaseTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FrameTestsHw extends BaseTest {
 
     @Test
-    public void frameTest() {
-        driver.get("http://the-internet.herokuapp.com/iframe");
+    public void frameTest() throws InterruptedException {
+        driver.get("http://the-internet.herokuapp.com/frames");
 
-        //driver.switchTo().frame(driver.findElement(By.id("mce_0_ifr")));
-        //driver.switchTo().frame(0);
-        driver.switchTo().frame("mce_0_ifr");
-        Assert.assertTrue(driver.findElement(By.id("tinymce")).isDisplayed());
+        driver.findElement(By.cssSelector("[href*=iframe]")).click();
 
-        driver.switchTo().parentFrame();
-        Assert.assertTrue(driver.findElement(By.className("tox-editor-container")).isDisplayed());
+        waitsService.waitForVisibilityLocatedBy(By.cssSelector("h3"));
 
+        driver.switchTo().frame(0);
+        WebElement text = waitsService.waitForVisibilityLocatedBy(By.xpath("//body/p"));
+        Assert.assertEquals(text.getText(),"Your content goes here.");
     }
 }
