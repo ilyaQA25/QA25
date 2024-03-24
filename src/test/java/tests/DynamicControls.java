@@ -2,6 +2,8 @@ package tests;
 
 import baseEntities.BaseTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DynamicControls extends BaseTest {
@@ -11,6 +13,13 @@ public class DynamicControls extends BaseTest {
 
 
         driver.findElement(By.xpath("//button[text() = 'Remove']")).click();
-        waitsService.waitForExists(By.id("//h4"));
+        waitsService.waitForVisibilityLocatedBy(By.id("message"));
+        waitsService.waitForElementGone(By.id("checkbox"));
+
+        Assert.assertFalse(driver.findElement(By.xpath("//form/input")).isEnabled());
+        driver.findElement(By.xpath("//button[text() = 'Enable']")).click();
+        WebElement secondMess = waitsService.waitForVisibilityLocatedBy(By.xpath("//p[@id='message']"));
+        Assert.assertTrue(secondMess.isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//form/input")).isEnabled());
     }
 }
