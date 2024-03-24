@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ContextMenuTest extends BaseTest {
+public class ContextMenuTestHomework extends BaseTest {
 
     @Test
     public void contextMenu() throws InterruptedException {
@@ -18,7 +18,6 @@ public class ContextMenuTest extends BaseTest {
         Alert alert = driver.switchTo().alert();
         Assert.assertEquals(alert.getText(), "You selected a context menu");
         driver.switchTo().alert().accept();
-
     }
 }
 

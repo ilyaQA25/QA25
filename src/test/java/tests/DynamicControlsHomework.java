@@ -6,11 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DynamicControls extends BaseTest {
+public class DynamicControlsHomework extends BaseTest {
     @Test
     public void dynamicControls() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
-
 
         driver.findElement(By.xpath("//button[text() = 'Remove']")).click();
         waitsService.waitForVisibilityLocatedBy(By.id("message"));

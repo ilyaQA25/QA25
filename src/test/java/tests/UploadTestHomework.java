@@ -9,7 +9,7 @@ import services.WaitsService;
 
 import java.time.Duration;
 
-public class UploadTest extends BaseTest {
+public class UploadTestHomework extends BaseTest {
 
     @Test
     public void uploadTest() {
@@ -17,7 +17,7 @@ public class UploadTest extends BaseTest {
         WaitsService wait = new WaitsService(driver, Duration.ofSeconds(10));
 
         WebElement fileUploadPath = wait.waitForExists(By.id("file-upload"));
-        String pathToFile = UploadTest.class.getClassLoader().getResource("Tests.png").getPath();
+        String pathToFile = UploadTestHomework.class.getClassLoader().getResource("Tests.png").getPath();
         System.out.println(pathToFile);
         fileUploadPath.sendKeys(pathToFile);
         wait.waitForExists(By.id("file-submit")).submit();
