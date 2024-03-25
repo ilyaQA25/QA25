@@ -1,41 +1,42 @@
 package pages;
 
-import baseEntities.BasePage;
+import baseEntity.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
-    // Блок описания локаторов для элементов
-    private final By emailInputLocator = By.id("name");
-    private final By pswInputLocator = By.id("password");
-    private final By logInButtonLocator = By.id("button_primary");
-    private By errorTextLocator = By.className("error-text");
+    private static String ENDPOINT = "/auth/login";
 
-    // Блок иницализации
+    private static final By PAGE_OPENED_IDENTIFIER = By.id("button_primary");
+
+    protected By emailSelector = By.id("name");
+    protected By passwordSelector = By.id("password");
+    protected By loginSelector = By.id("button_primary");
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    protected By getPageIdentifier() {
-        return emailInputLocator;
+    protected void openPage() {
+        driver.get(BASE_URL + ENDPOINT);
     }
 
-    // Блок атомарных методов
-    public WebElement getEmailInput() {
-        return waitsService.waitForExists(emailInputLocator);
+    @Override
+    protected boolean isPageOpened() {
+        return waits.waitForVisibility(PAGE_OPENED_IDENTIFIER).isDisplayed();
     }
 
-    public WebElement getPswInput() {
-        return waitsService.waitForExists(pswInputLocator);
+    public WebElement getEmailField() {
+        return driver.findElement(emailSelector);
     }
 
-    public WebElement getLogInButton() {
-        return waitsService.waitForExists(logInButtonLocator);
+    public WebElement getPasswordField() {
+        return driver.findElement(passwordSelector);
     }
 
-    public WebElement getErrorTextElement() {
-        return waitsService.waitForExists(errorTextLocator);
+    public WebElement getLoginButton() {
+        return driver.findElement(loginSelector);
     }
 }
