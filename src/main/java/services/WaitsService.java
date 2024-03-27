@@ -21,6 +21,9 @@ public class WaitsService {
         wait = new WebDriverWait(driver, timeout);
     }
 
+    public WaitsService(WebDriver driver) {
+    }
+
     public WebElement waitForVisibility(WebElement element) {
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
