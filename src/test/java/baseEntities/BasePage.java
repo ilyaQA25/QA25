@@ -22,6 +22,10 @@ public abstract class BasePage {
         return waitsService.waitForExists(getPageIdentifier()).isDisplayed();
     }
 
+    public String getPageUrl(){
+        return ReadProperties.getUrl();
+    }
+
     public void openPageByUrl(String pagePath)  {
         driver.get(ReadProperties.getUrl() + pagePath);
     }

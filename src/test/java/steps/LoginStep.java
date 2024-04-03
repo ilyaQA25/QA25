@@ -2,7 +2,6 @@ package steps;
 
 import baseEntities.BaseStep;
 import org.openqa.selenium.WebDriver;
-import pages.DashboardPage;
 import pages.LoginPage;
 
 public class LoginStep extends BaseStep {
@@ -11,11 +10,7 @@ public class LoginStep extends BaseStep {
         super(driver);
     }
 
-    public DashboardPage successLogin(String email, String psw) {
-        login(email, psw);
 
-        return dashboardPage;
-    }
 
     public LoginPage incorrectLogin(String email, String psw) {
         login(email, psw);
