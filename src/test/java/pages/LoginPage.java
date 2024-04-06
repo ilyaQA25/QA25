@@ -6,11 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
+
     // Блок описания локаторов для элементов
     private final By usernamelInputLocator = By.id("user-name");
     private final By pswInputLocator = By.id("password");
     private final By logInButtonLocator = By.id("login-button");
-
 
     // Блок иницализации
     public LoginPage(WebDriver driver) {
@@ -23,7 +23,7 @@ public class LoginPage extends BasePage {
     }
 
     // Блок атомарных методов
-    public WebElement getEmailInput() {
+    public WebElement getUsernameInput() {
         return waitsService.waitForExists(usernamelInputLocator);
     }
 
