@@ -4,7 +4,7 @@ import baseEntities.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+//
 public class CheckoutLastPage extends BasePage {
     private final By titleLocator = By.xpath("//*[text() = 'Checkout: Complete!']");
     private final By headerLocator = By.xpath("//h2[contains(text(), 'Thank you for your order!')]");

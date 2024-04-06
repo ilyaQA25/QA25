@@ -4,7 +4,7 @@ import baseEntities.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+//
 public class LoginPage extends BasePage {
     private final By usernamelInputLocator = By.id("user-name");
     private final By pswInputLocator = By.id("password");
