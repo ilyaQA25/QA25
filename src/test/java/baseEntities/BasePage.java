@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import services.WaitsService;
 
 import java.time.Duration;
-//
+
 public abstract class BasePage {
     protected WebDriver driver;
     protected WaitsService waitsService;

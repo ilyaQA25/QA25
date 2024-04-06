@@ -1,5 +1,5 @@
 package steps;
-//
+
 import baseEntities.BaseSteps;
 import org.openqa.selenium.WebDriver;
 import pages.CartPage;

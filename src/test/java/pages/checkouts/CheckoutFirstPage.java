@@ -4,7 +4,7 @@ import baseEntities.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//
+
 public class CheckoutFirstPage extends BasePage {
     private final By firstNameLocator = By.id("first-name");
     private final By lastNameLocator = By.id("last-name");

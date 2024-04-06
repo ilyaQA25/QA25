@@ -14,7 +14,7 @@ import pages.checkouts.CheckoutSecondPage;
 import steps.AddToCartSteps;
 import steps.CheckoutSteps;
 import steps.NavigationSteps;
-//
+
 public class EndToEndTest extends BaseTest {
     @Parameters({"firstName-param", "lastName-param", "code-param"})
     @Test(testName = "e2e Adding to cart and checkout")

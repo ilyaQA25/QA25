@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import pages.checkouts.CheckoutFirstPage;
 import pages.checkouts.CheckoutLastPage;
 import pages.checkouts.CheckoutSecondPage;
-//
+
 public class CheckoutSteps extends BaseSteps {
     public CheckoutSteps(WebDriver driver) {
         super(driver);

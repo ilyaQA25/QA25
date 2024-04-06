@@ -13,5 +13,5 @@ Steps:
 
 Expected result:
 Переход на страницу https://www.saucedemo.com/checkout-complete.html и возврат
-на страницу https://www.saucedemo.com/inventory.html/
+на страницу https://www.saucedemo.com/inventory.html
 
