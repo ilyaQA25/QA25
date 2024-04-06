@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 public class InventoryPage extends BasePage {
     private final By addToCartButtonLocator = By.cssSelector("#shopping_cart_container");
     private final By cartIconLocator = By.id("shopping_cart_container");
-    // Блок описания селекторов для элементов
+
     private By headerTitleLabelLocator = By.className("app_logo");
 
     public InventoryPage(WebDriver driver) {

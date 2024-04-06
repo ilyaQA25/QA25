@@ -3,7 +3,7 @@
 <suite name="Parameters Suite">
     <parameter name="firstName-param" value="Ilya"/>
     <parameter name="lastName-param" value="Prez"/>
-    <parameter name="code-param" value="220001"/>
+    <parameter name="code-param" value="22001"/>
     <test name="Param tests">
         <classes>
             <class name="tests.EndToEndTest"/>
