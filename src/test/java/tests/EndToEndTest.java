@@ -20,7 +20,7 @@ public class EndToEndTest extends BaseTest {
     @Test(testName = "e2e Adding to cart and checkout")
     public void e2eTest(@Optional("Ilya") String firstName,
                         @Optional("Prez") String lastName,
-                        @Optional("22001") String postalCode) throws InterruptedException {
+                        @Optional("22001") String postalCode)  {
         NavigationSteps navigationSteps = new NavigationSteps(driver);
         navigationSteps.logIn(ReadProperties.username(), ReadProperties.password());
         Assert.assertTrue(new InventoryPage(driver).isPageOpened());
