@@ -1,10 +1,13 @@
 package pages;
 
 import baseEntities.BasePage;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+@Getter
+@Setter
 public class InventoryPage extends BasePage {
     private final By addToCartButtonLocator = By.cssSelector("#shopping_cart_container");
     private final By cartIconLocator = By.id("shopping_cart_container");
