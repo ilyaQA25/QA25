@@ -36,4 +36,3 @@ public class CheckoutFirstPage extends BasePage {
         return waitsService.waitForVisibilityLocatedBy(continueButtonLocator);
     }
 }
-

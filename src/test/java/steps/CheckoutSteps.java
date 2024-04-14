@@ -17,6 +17,7 @@ public class CheckoutSteps extends BaseSteps {
         checkoutInfoPage.getLastNameInput().sendKeys(lastName);
         checkoutInfoPage.getPostalCodeInput().sendKeys(postalCode);
         checkoutInfoPage.getContinueButton().click();
+
     }
 
     public void finishCheckout() {
