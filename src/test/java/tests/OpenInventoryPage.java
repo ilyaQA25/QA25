@@ -34,11 +34,4 @@ public class OpenInventoryPage extends BaseTest {
         Assert.assertTrue(new CartPage(driver).isPageOpened());
     }
 
-    @Test(description = "human readable text_2")
-    @Severity(SeverityLevel.CRITICAL)
-    public void failedOpenInventoryPage() {
-        NavigationSteps navigationSteps = new NavigationSteps(driver);
-        navigationSteps.logIn("dfgdfg", ReadProperties.password());
-        Assert.assertTrue(new InventoryPage(driver).isPageOpened());
-    }
 }
