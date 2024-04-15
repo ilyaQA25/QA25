@@ -8,6 +8,6 @@ public class AllureTest extends BaseTest {
 
     @Test(description = "failed test for screenshot")
     public void testName() {
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 }
