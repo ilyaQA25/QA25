@@ -1,0 +1,1 @@
+[{"uid":"f692a93b853c0fa0","name":"e2eTest","time":{"start":1713805721866,"stop":1713805722767,"duration":901},"status":"passed","severity":"normal"},{"uid":"9049a2dc4d9d81d2","name":"failed test for screenshot","time":{"start":1713805721259,"stop":1713805721266,"duration":7},"status":"passed","severity":"normal"}]
