@@ -1,0 +1,40 @@
+Index: src/test/java/tests/FirstTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tests;\n\nimport org.openqa.selenium.WebDriver;\nimport org.testng.annotations.Test;\nimport services.AdvancedDriver;\nimport services.BrowsersService;\nimport services.SimpleDriver;\n\npublic class FirstTest {\n\n    @Test\n    public void simpleDriverTest() {\n        SimpleDriver simpleDriver = new SimpleDriver();\n        WebDriver driver = simpleDriver.getDriver();\n\n        driver.get(\"http://onliner.by\");\n\n        driver.quit();\n    }\n\n    @Test\n    public void advancedDriverTest() throws InterruptedException{\n        AdvancedDriver simpleDriver = new AdvancedDriver();\n        WebDriver driver = simpleDriver.getDriver();\n\n        driver.get(\"http://onliner.by\");\n        Thread.sleep(3000);\n\n        driver.quit();\n    }\n\n    @Test\n    public void browsersServiceTest() {\n        BrowsersService browsersService = new BrowsersService();\n        WebDriver driver = browsersService.getDriver();\n\n        driver.get(\"http://onliner.by\");\n\n        driver.quit();\n    }\n}\n
+===================================================================
+diff --git a/src/test/java/tests/FirstTest.java b/src/test/java/tests/FirstTest.java
+--- a/src/test/java/tests/FirstTest.java	
++++ b/src/test/java/tests/FirstTest.java	
+@@ -15,6 +15,7 @@
+ 
+         driver.get("http://onliner.by");
+ 
++
+         driver.quit();
+     }
+ 
+Index: src/test/java/tests/SmokeTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tests;\n\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.Keys;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.support.ui.Select;\nimport org.testng.Assert;\nimport org.testng.annotations.AfterMethod;\nimport org.testng.annotations.BeforeMethod;\nimport org.testng.annotations.Test;\nimport services.BrowsersService;\n\npublic class SmokeTest {\n    private WebDriver driver;\n\n    @BeforeMethod\n    public void setUp() {\n        BrowsersService browsersService = new BrowsersService();\n        driver = browsersService.getDriver();\n    }\n\n    @Test\n    public void validateIKTCalculation() throws InterruptedException {\n        driver.get(\"https://clinic-cvetkov.ru/company/kalkulyator-imt/\");\n        WebElement height = driver.findElement(By.name(\"height\"));\n        WebElement weight = driver.findElement(By.name(\"weight\"));\n        WebElement button = driver.findElement(By.id(\"calc-mass-c\"));\n\n        height.sendKeys(\"183\");\n        weight.sendKeys(\"58\");\n        button.click();\n\n        Thread.sleep(2000);\n        WebElement result = driver.findElement(By.id(\"imt-result\"));\n        Assert.assertEquals(result.getText(), \"17.3 - Недостаточная (дефицит) масса тела\");\n    }\n\n    @Test\n    public void validateSKF() throws InterruptedException {\n        driver.get(\"https://bymed.top/calc/%D1%81%D0%BA%D1%84-2148\");\n        Thread.sleep(2000);\n\n        driver.switchTo().frame(1);\n\n        WebElement selectWebElement = driver.findElement(By.id(\"cr-size\"));\n        Select selectSex = new Select(selectWebElement);\n\n        selectSex.selectByIndex(1);\n        Thread.sleep(2000);\n\n        selectSex.selectByValue(\"mm\");\n        Thread.sleep(2000);\n\n        selectSex.selectByVisibleText(\"мг/дл\");\n        Thread.sleep(2000);\n    }\n\n\n    @AfterMethod\n    public void tearDown() {\n        driver.quit();\n    }\n}\n
+===================================================================
+diff --git a/src/test/java/tests/SmokeTest.java b/src/test/java/tests/SmokeTest.java
+--- a/src/test/java/tests/SmokeTest.java	
++++ b/src/test/java/tests/SmokeTest.java	
+@@ -1,7 +1,6 @@
+ package tests;
+ 
+ import org.openqa.selenium.By;
+-import org.openqa.selenium.Keys;
+ import org.openqa.selenium.WebDriver;
+ import org.openqa.selenium.WebElement;
+ import org.openqa.selenium.support.ui.Select;
+@@ -46,6 +45,7 @@
+         WebElement selectWebElement = driver.findElement(By.id("cr-size"));
+         Select selectSex = new Select(selectWebElement);
+ 
++        
+         selectSex.selectByIndex(1);
+         Thread.sleep(2000);
+ 

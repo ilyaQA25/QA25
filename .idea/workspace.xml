@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e65f25b3-643f-4f9b-b1ae-916ecfe28fc7" name="Changes" comment="master_allure" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ilyaQA25&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="35c439da-497c-4ff9-9908-34154efaca45" />
+        <option name="url" value="https://github.com/ilyaQA25/QA25.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2d2hqBdRV0CVyBBPlRTb0mJdgFF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/Ilya/IdeaProjects/automation_2.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "XML"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.ValidateSKF.validateSKF">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="automation_2.0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="automation_2.0" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaminateTest.CalcLaminateTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TMS_Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LaminateTest" />
+      <option name="METHOD_NAME" value="CalcLaminateTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLaminateTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TMS_Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyLaminateTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLaminateTest.LaminateCalc" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TMS_Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyLaminateTest" />
+      <option name="METHOD_NAME" value="LaminateCalc" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLaminateTest.validateSKF" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TMS_Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyLaminateTest" />
+      <option name="METHOD_NAME" value="validateSKF" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateSKF.validateSKF" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TMS_Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ValidateSKF" />
+      <option name="METHOD_NAME" value="validateSKF" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.ValidateSKF.validateSKF" />
+        <item itemvalue="TestNG.MyLaminateTest.validateSKF" />
+        <item itemvalue="TestNG.MyLaminateTest.LaminateCalc" />
+        <item itemvalue="TestNG.MyLaminateTest" />
+        <item itemvalue="TestNG.LaminateTest.CalcLaminateTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e65f25b3-643f-4f9b-b1ae-916ecfe28fc7" name="Changes" comment="" />
+      <created>1709212269835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709212269835</updated>
+    </task>
+    <task id="LOCAL-00028" summary="selenium_advanced">
+      <option name="closed" value="true" />
+      <created>1710421905948</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1710421905948</updated>
+    </task>
+    <task id="LOCAL-00029" summary="selenium_advanced">
+      <option name="closed" value="true" />
+      <created>1710421955408</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1710421955408</updated>
+    </task>
+    <task id="LOCAL-00030" summary="locators">
+      <option name="closed" value="true" />
+      <created>1710681531087</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1710681531087</updated>
+    </task>
+    <task id="LOCAL-00031" summary="locators_hw">
+      <option name="closed" value="true" />
+      <created>1710690338913</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1710690338913</updated>
+    </task>
+    <task id="LOCAL-00032" summary="locators_hw_1.1">
+      <option name="closed" value="true" />
+      <created>1710690440026</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1710690440026</updated>
+    </task>
+    <task id="LOCAL-00033" summary="locators_hw_1.2">
+      <option name="closed" value="true" />
+      <created>1710690560167</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1710690560167</updated>
+    </task>
+    <task id="LOCAL-00034" summary="advaction">
+      <option name="closed" value="true" />
+      <created>1710777770336</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1710777770336</updated>
+    </task>
+    <task id="LOCAL-00035" summary="locators_done">
+      <option name="closed" value="true" />
+      <created>1710778213084</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1710778213084</updated>
+    </task>
+    <task id="LOCAL-00036" summary="advanced_action lesson materials">
+      <option name="closed" value="true" />
+      <created>1710784283692</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1710784283692</updated>
+    </task>
+    <task id="LOCAL-00037" summary="page_object simple">
+      <option name="closed" value="true" />
+      <created>1710788510075</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1710788510075</updated>
+    </task>
+    <task id="LOCAL-00038" summary="master_forPR">
+      <option name="closed" value="true" />
+      <created>1710936264317</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1710936264317</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Selenium_hw_done">
+      <option name="closed" value="true" />
+      <created>1710936435445</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1710936435445</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Selenium_hw_done_1">
+      <option name="closed" value="true" />
+      <created>1710936571483</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1710936571483</updated>
+    </task>
+    <task id="LOCAL-00041" summary="master_delete">
+      <option name="closed" value="true" />
+      <created>1710936753858</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1710936753858</updated>
+    </task>
+    <task id="LOCAL-00042" summary="advanced_hw">
+      <option name="closed" value="true" />
+      <created>1710946882412</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1710946882412</updated>
+    </task>
+    <task id="LOCAL-00043" summary="master">
+      <option name="closed" value="true" />
+      <created>1710961272597</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1710961272597</updated>
+    </task>
+    <task id="LOCAL-00044" summary="master">
+      <option name="closed" value="true" />
+      <created>1710961461943</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1710961461943</updated>
+    </task>
+    <task id="LOCAL-00045" summary="WebDriver_Advanced_hw">
+      <option name="closed" value="true" />
+      <created>1711289789060</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1711289789060</updated>
+    </task>
+    <task id="LOCAL-00046" summary="WebDriver_Advanced_hw_1.0">
+      <option name="closed" value="true" />
+      <created>1711289998747</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1711289998747</updated>
+    </task>
+    <task id="LOCAL-00047" summary="WebDriver_Alert_JS_iFrame_hw">
+      <option name="closed" value="true" />
+      <created>1711299082647</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1711299082647</updated>
+    </task>
+    <task id="LOCAL-00048" summary="loadable_component">
+      <option name="closed" value="true" />
+      <created>1711386601268</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1711386601268</updated>
+    </task>
+    <task id="LOCAL-00049" summary="loadable_component_1&amp;1">
+      <option name="closed" value="true" />
+      <created>1711557017535</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1711557017535</updated>
+    </task>
+    <task id="LOCAL-00050" summary="pg">
+      <option name="closed" value="true" />
+      <created>1712156872323</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1712156872323</updated>
+    </task>
+    <task id="LOCAL-00051" summary="pg_hw_0.1">
+      <option name="closed" value="true" />
+      <created>1712158333824</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1712158333824</updated>
+    </task>
+    <task id="LOCAL-00052" summary="pg_hw_done">
+      <option name="closed" value="true" />
+      <created>1712399749682</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1712399749682</updated>
+    </task>
+    <task id="LOCAL-00053" summary="pg_hw_done">
+      <option name="closed" value="true" />
+      <created>1712399888189</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1712399888189</updated>
+    </task>
+    <task id="LOCAL-00054" summary="pg_hw_done">
+      <option name="closed" value="true" />
+      <created>1712399920649</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1712399920649</updated>
+    </task>
+    <task id="LOCAL-00055" summary="pg_hw_done_secondBranch">
+      <option name="closed" value="true" />
+      <created>1712400236752</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1712400236752</updated>
+    </task>
+    <task id="LOCAL-00056" summary="pg_hw_done_second_Branch_2.1">
+      <option name="closed" value="true" />
+      <created>1712400314830</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1712400314830</updated>
+    </task>
+    <task id="LOCAL-00057" summary="patterns_hw">
+      <option name="closed" value="true" />
+      <created>1712488319535</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1712488319535</updated>
+    </task>
+    <task id="LOCAL-00058" summary="maven_hw">
+      <option name="closed" value="true" />
+      <created>1712497041816</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1712497041817</updated>
+    </task>
+    <task id="LOCAL-00059" summary="allure_hw_done">
+      <option name="closed" value="true" />
+      <created>1712591251922</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1712591251922</updated>
+    </task>
+    <task id="LOCAL-00060" summary="lombok_hw">
+      <option name="closed" value="true" />
+      <created>1713011679588</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1713011679588</updated>
+    </task>
+    <task id="LOCAL-00061" summary="lombok__log_hw_1.1">
+      <option name="closed" value="true" />
+      <created>1713021064749</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1713021064749</updated>
+    </task>
+    <task id="LOCAL-00062" summary="lombok__log_hw_1.2">
+      <option name="closed" value="true" />
+      <created>1713021140215</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1713021140215</updated>
+    </task>
+    <task id="LOCAL-00063" summary="lombok__log_hw_1.2">
+      <option name="closed" value="true" />
+      <created>1713021237024</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1713021237024</updated>
+    </task>
+    <task id="LOCAL-00064" summary="selenide_hw">
+      <option name="closed" value="true" />
+      <created>1713091354047</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1713091354047</updated>
+    </task>
+    <task id="LOCAL-00065" summary="selenide_hw">
+      <option name="closed" value="true" />
+      <created>1713199800737</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1713199800738</updated>
+    </task>
+    <task id="LOCAL-00066" summary="ci-cd">
+      <option name="closed" value="true" />
+      <created>1713199997743</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1713199997743</updated>
+    </task>
+    <task id="LOCAL-00067" summary="ci-cd">
+      <option name="closed" value="true" />
+      <created>1713201327064</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1713201327064</updated>
+    </task>
+    <task id="LOCAL-00068" summary="ci-cd">
+      <option name="closed" value="true" />
+      <created>1713201670785</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1713201670785</updated>
+    </task>
+    <task id="LOCAL-00069" summary="ci-cd">
+      <option name="closed" value="true" />
+      <created>1713202052299</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1713202052299</updated>
+    </task>
+    <task id="LOCAL-00070" summary="ci-cd_jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1713802405387</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1713802405388</updated>
+    </task>
+    <task id="LOCAL-00071" summary="ci-cd_maven yml">
+      <option name="closed" value="true" />
+      <created>1713803660468</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1713803660469</updated>
+    </task>
+    <task id="LOCAL-00072" summary="ci-cd_maven yml_headless">
+      <option name="closed" value="true" />
+      <created>1713803943161</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1713803943161</updated>
+    </task>
+    <task id="LOCAL-00073" summary="ci-cd_maven yml_headless_allure">
+      <option name="closed" value="true" />
+      <created>1713804612922</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1713804612922</updated>
+    </task>
+    <task id="LOCAL-00074" summary="gh-pages">
+      <option name="closed" value="true" />
+      <created>1713804705937</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1713804705937</updated>
+    </task>
+    <task id="LOCAL-00075" summary="gh-pages_no tagret">
+      <option name="closed" value="true" />
+      <created>1713804874906</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1713804874906</updated>
+    </task>
+    <task id="LOCAL-00076" summary="master_allure">
+      <option name="closed" value="true" />
+      <created>1713805412663</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1713805412663</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="WebDriver_Advanced_hw" />
+    <MESSAGE value="WebDriver_Advanced_hw_1.0" />
+    <MESSAGE value="WebDriver_Alert_JS_iFrame_hw" />
+    <MESSAGE value="loadable_component" />
+    <MESSAGE value="loadable_component_1&amp;1" />
+    <MESSAGE value="pg" />
+    <MESSAGE value="pg_hw_0.1" />
+    <MESSAGE value="pg_hw_done" />
+    <MESSAGE value="pg_hw_done_secondBranch" />
+    <MESSAGE value="pg_hw_done_second_Branch_2.1" />
+    <MESSAGE value="patterns_hw" />
+    <MESSAGE value="maven_hw" />
+    <MESSAGE value="allure_hw_done" />
+    <MESSAGE value="lombok_hw" />
+    <MESSAGE value="lombok__log_hw_1.1" />
+    <MESSAGE value="lombok__log_hw_1.2" />
+    <MESSAGE value="selenide_hw" />
+    <MESSAGE value="ci-cd" />
+    <MESSAGE value="ci-cd_jenkinsfile" />
+    <MESSAGE value="ci-cd_maven yml" />
+    <MESSAGE value="ci-cd_maven yml_headless" />
+    <MESSAGE value="ci-cd_maven yml_headless_allure" />
+    <MESSAGE value="gh-pages" />
+    <MESSAGE value="gh-pages_no tagret" />
+    <MESSAGE value="master_allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="master_allure" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson3/tests/BaseTest.java</url>
+          <line>65</line>
+          <properties class="lesson3.tests.BaseTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
