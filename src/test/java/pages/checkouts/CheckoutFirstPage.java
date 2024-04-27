@@ -1,9 +1,10 @@
 package pages.checkouts;
 
 import baseEntities.BasePage;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class CheckoutFirstPage extends BasePage {
     private final By firstNameLocator = By.id("first-name");
@@ -11,29 +12,25 @@ public class CheckoutFirstPage extends BasePage {
     private final By zipCodeLocator = By.id("postal-code");
     private final By continueButtonLocator = By.id("continue");
 
-    public CheckoutFirstPage(WebDriver driver) {
-        super(driver);
-    }
-
     @Override
     protected By getPageIdentifier() {
         return firstNameLocator;
     }
 
-    public WebElement getFirstNameInput() {
-        return waitsService.waitForVisibilityLocatedBy(firstNameLocator);
+    public SelenideElement getFirstNameInput() {
+        return $(firstNameLocator);
     }
 
-    public WebElement getLastNameInput() {
-        return waitsService.waitForVisibilityLocatedBy(lastNameLocator);
+    public SelenideElement getLastNameInput() {
+        return $(lastNameLocator);
     }
 
-    public WebElement getPostalCodeInput() {
-        return waitsService.waitForVisibilityLocatedBy(zipCodeLocator);
+    public SelenideElement getPostalCodeInput() {
+        return $(zipCodeLocator);
     }
 
-    public WebElement getContinueButton() {
-        return waitsService.waitForVisibilityLocatedBy(continueButtonLocator);
+    public SelenideElement getContinueButton() {
+        return $(continueButtonLocator);
     }
 }
 

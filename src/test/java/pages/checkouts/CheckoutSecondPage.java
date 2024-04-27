@@ -1,23 +1,20 @@
 package pages.checkouts;
 
 import baseEntities.BasePage;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class CheckoutSecondPage extends BasePage {
     private final By finishButtonLocator = By.id("finish");
-
-    public CheckoutSecondPage(WebDriver driver) {
-        super(driver);
-    }
 
     @Override
     protected By getPageIdentifier() {
         return finishButtonLocator;
     }
 
-    public WebElement getfinishButton() {
-        return waitsService.waitForVisibilityLocatedBy(finishButtonLocator);
+    public SelenideElement getfinishButton() {
+        return $(finishButtonLocator);
     }
 }

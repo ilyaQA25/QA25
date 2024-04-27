@@ -1,9 +1,10 @@
 package pages;
 
 import baseEntities.BasePage;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class InventoryPage extends BasePage {
     private final By addToCartButtonLocator = By.cssSelector("#shopping_cart_container");
@@ -11,24 +12,20 @@ public class InventoryPage extends BasePage {
 
     private By headerTitleLabelLocator = By.className("app_logo");
 
-    public InventoryPage(WebDriver driver) {
-        super(driver);
-    }
-
     @Override
     protected By getPageIdentifier() {
         return headerTitleLabelLocator;
     }
 
-    public WebElement getHeaderTitleLabel() {
-        return waitsService.waitForExists(headerTitleLabelLocator);
+    public SelenideElement getHeaderTitleLabel() {
+        return $(headerTitleLabelLocator);
     }
 
-    public WebElement getAddToCartButton() {
-        return waitsService.waitForExists(addToCartButtonLocator);
+    public SelenideElement getAddToCartButton() {
+        return $(addToCartButtonLocator);
     }
 
-    public WebElement getCartIconLocator() {
-        return waitsService.waitForExists(cartIconLocator);
+    public SelenideElement getCartIconLocator() {
+        return $(cartIconLocator);
     }
 }

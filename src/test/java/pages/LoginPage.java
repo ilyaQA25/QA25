@@ -1,9 +1,10 @@
 package pages;
 
 import baseEntities.BasePage;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage extends BasePage {
     private final By usernamelInputLocator = By.id("user-name");
@@ -11,9 +12,6 @@ public class LoginPage extends BasePage {
     private final By logInButtonLocator = By.id("login-button");
 
     // Блок иницализации
-    public LoginPage(WebDriver driver) {
-        super(driver);
-    }
 
     @Override
     protected By getPageIdentifier() {
@@ -21,16 +19,16 @@ public class LoginPage extends BasePage {
     }
 
     // Блок атомарных методов
-    public WebElement getUsernameInput() {
-        return waitsService.waitForExists(usernamelInputLocator);
+    public SelenideElement getUsernameInput() {
+        return $(usernamelInputLocator);
     }
 
-    public WebElement getPswInput() {
-        return waitsService.waitForExists(pswInputLocator);
+    public SelenideElement getPswInput() {
+        return $(pswInputLocator);
     }
 
-    public WebElement getLogInButton() {
-        return waitsService.waitForExists(logInButtonLocator);
+    public SelenideElement getLogInButton() {
+        return $(logInButtonLocator);
     }
 
 
