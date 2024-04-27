@@ -4,6 +4,7 @@ import pages.CartPage;
 import pages.InventoryPage;
 import pages.LoginPage;
 import pages.checkouts.CheckoutFirstPage;
+import pages.checkouts.CheckoutLastPage;
 import pages.checkouts.CheckoutSecondPage;
 
 public class BaseSteps {
@@ -12,6 +13,7 @@ public class BaseSteps {
     protected CartPage cartPage;
     protected CheckoutFirstPage checkoutFirstPage;
     protected CheckoutSecondPage checkoutSecondPage;
+    protected CheckoutLastPage checkoutLastPage;
 
     public BaseSteps() {
         loginPage = new LoginPage();
@@ -20,6 +22,7 @@ public class BaseSteps {
         cartPage = new CartPage();
         checkoutFirstPage = new CheckoutFirstPage();
         checkoutSecondPage = new CheckoutSecondPage();
+        checkoutLastPage = new CheckoutLastPage();
     }
 
 }

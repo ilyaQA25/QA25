@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CheckoutSecondPage extends BasePage {
-    private final By finishButtonLocator = By.id("finish");
+    private final By finishButtonLocator = By.cssSelector("#finish");
 
     @Override
     protected By getPageIdentifier() {

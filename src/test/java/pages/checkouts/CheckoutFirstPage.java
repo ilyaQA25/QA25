@@ -7,10 +7,10 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CheckoutFirstPage extends BasePage {
-    private final By firstNameLocator = By.id("first-name");
-    private final By lastNameLocator = By.id("last-name");
-    private final By zipCodeLocator = By.id("postal-code");
-    private final By continueButtonLocator = By.id("continue");
+    private final By firstNameLocator = By.cssSelector("#first-name");
+    private final By lastNameLocator = By.cssSelector("#last-name");
+    private final By zipCodeLocator = By.cssSelector("#postal-code");
+    private final By continueButtonLocator = By.cssSelector("#continue");
 
     @Override
     protected By getPageIdentifier() {
