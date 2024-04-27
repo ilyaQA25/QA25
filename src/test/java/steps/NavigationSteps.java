@@ -1,55 +1,32 @@
 package steps;
 
 import baseEntities.BaseSteps;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
-import pages.*;
-
+import pages.DashboardPage;
+import pages.LoginPage;
 
 public class NavigationSteps extends BaseSteps {
-
-    private ChosenProducstPage chosenProducstPage;
-    private AllProductsPage allProductsPage;
-    private YourCartPage yourCartPage;
-    private CheckoutOverview checkoutOverview;
-    private CheckoutComplete checkoutComplete;
+    private LoginPage loginPage;
+    private DashboardPage dashboardPage;
 
     public NavigationSteps(WebDriver driver) {
         super(driver);
     }
 
-    public void AddToShoppingCart() {
-        logger.info("Info Message: ...");
-        chosenProducstPage = new ChosenProducstPage(driver);
-        chosenProducstPage.getAddToCartButtom().click();
+    @Step("успешный логин")
+    public DashboardPage successfulLogin(String username, String password) {
+        loginPage = new LoginPage(driver);
+        return loginPage.successfulLogin(username, password);
     }
 
-    public void goToShoppingCart() {
-        logger.info("Info Message: ...");
-        chosenProducstPage = new ChosenProducstPage(driver);
-        chosenProducstPage.getShoppingCartLink().click();
+    @Step("incorrectLogin")
+    public LoginPage incorrectLogin(String username, String password) {
+        loginPage = new LoginPage(driver);
+        return loginPage.incorrectLogin(username, password);
     }
 
-    public void choseProduct() {
-        logger.info("Info Message: ...");
-        allProductsPage = new AllProductsPage(driver);
-        allProductsPage.getChosenProductName().click();
-    }
-
-    public void goToCheckoutInformation() {
-        logger.info("Info Message: ...");
-        yourCartPage = new YourCartPage(driver);
-        yourCartPage.getCheckoutButton().click();
-    }
-
-    public void goToComplete() {
-        logger.info("Info Message: ...");
-        checkoutOverview = new CheckoutOverview(driver);
-        checkoutOverview.getFinishButton().click();
-    }
-
-    public void backHome() {
-        logger.info("Info Message: ...");
-        checkoutComplete = new CheckoutComplete(driver);
-        checkoutComplete.getBackHomeButton().click();
+    public void navigateToDashboardByUrl() {
+        dashboardPage = new DashboardPage(driver);
     }
 }

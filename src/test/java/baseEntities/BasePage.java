@@ -1,26 +1,42 @@
 package baseEntities;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import configuration.ReadProperties;
 import services.WaitsService;
-import tests.LoggerTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.LoadableComponent;
 
-public abstract class BasePage {
+import java.time.Duration;
+
+public abstract class BasePage extends LoadableComponent<BasePage> {
     protected WebDriver driver;
     protected WaitsService waitsService;
-
-    protected Logger logger = LogManager.getLogger(LoggerTest.class);
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.waitsService = new WaitsService(driver);
+
+        get();
     }
 
-    protected abstract By getPageIdentifier();   //идентификатор страницы
+    protected void load() {
+        driver.get(ReadProperties.getUrl() + getPagePath());
+    }
+
+    protected void isLoaded() throws Error {
+        if (!isPageOpened()) throw new Error();
+    }
+
+    protected abstract By getPageIdentifier();
+    protected abstract String getPagePath();
 
     public boolean isPageOpened() {
-        return driver.findElement(getPageIdentifier()).isDisplayed();
+        try {
+            return new WaitsService(driver, Duration.ofSeconds(ReadProperties.pageLoadTimeout()))
+                    .waitForVisibilityLocatedBy(getPageIdentifier()).isDisplayed();
+        } catch (TimeoutException ex) {
+            return false;
+        }
     }
 }
