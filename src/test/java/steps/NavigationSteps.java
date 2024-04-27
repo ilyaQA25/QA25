@@ -7,6 +7,7 @@ public class NavigationSteps extends BaseSteps {
         loginPage.getUsernameInput().sendKeys(username);
         loginPage.getPswInput().sendKeys(psw);
         loginPage.getLogInButton().click();
+
     }
 
     public void getToCart() {
@@ -16,4 +17,6 @@ public class NavigationSteps extends BaseSteps {
     public void getToCheckout() {
         cartPage.getCheckoutButtonLocator().click();
     }
+
 }
+
