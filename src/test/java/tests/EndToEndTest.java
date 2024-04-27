@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import steps.NavigationSteps;
 
 public class EndToEndTest extends BaseTest {
-
    /* (@Optional("Ilya") String firstName,
     @Optional("Prez") String lastName,
     @Optional("22001") String postalCode)*/
