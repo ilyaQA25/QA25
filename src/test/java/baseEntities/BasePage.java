@@ -33,7 +33,7 @@ public abstract class BasePage extends LoadableComponent<BasePage> {
 
     public boolean isPageOpened() {
         try {
-            return new WaitsService(driver, Duration.ofSeconds(ReadProperties.pageLoadTimeout()))
+            return new WaitsService(driver, Duration.ofSeconds(ReadProperties.timeout()))
                     .waitForVisibilityLocatedBy(getPageIdentifier()).isDisplayed();
         } catch (TimeoutException ex) {
             return false;
