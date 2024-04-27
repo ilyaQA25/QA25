@@ -3,10 +3,8 @@ package steps;
 import baseEntities.BaseSteps;
 import pages.CartPage;
 import pages.InventoryPage;
-import pages.LoginPage;
 
 public class NavigationSteps extends BaseSteps {
-    private LoginPage loginPage;
     private InventoryPage inventoryPage;
     private CartPage cartPage;
 
