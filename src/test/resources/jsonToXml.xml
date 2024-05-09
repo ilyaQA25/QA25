@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <widget>
+        <debug>on</debug>
+        <image>
+            <alignment>center</alignment>
+            <hOffset>250</hOffset>
+            <name>sun1</name>
+            <src>Images/Sun.png</src>
+            <vOffset>250</vOffset>
+        </image>
+        <text>
+            <alignment>center</alignment>
+            <data>Click Here</data>
+            <hOffset>250</hOffset>
+            <name>text1</name>
+            <onMouseUp>sun1.opacity = (sun1.opacity / 100) * 90;</onMouseUp>
+            <size>36</size>
+            <style>bold</style>
+            <vOffset>100</vOffset>
+        </text>
+        <window>
+            <height>500</height>
+            <name>main_window</name>
+            <title>Sample Konfabulator Widget</title>
+            <width>500</width>
+        </window>
+    </widget>
+</root>
