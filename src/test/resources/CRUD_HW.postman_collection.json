@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "d51998f7-e1d0-470a-af8f-5ae127a7c761",
+		"name": "CRUD_HW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34605712"
+	},
+	"item": [
+		{
+			"name": "Get Milestone",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{login}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/index.php?/api/v2/get_milestone/{{milestone_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "/api/v2/get_milestone/{{milestone_id}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get projects milestone",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{login}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}index.php?/api/v2/get_milestones/{{project_id}}",
+					"host": [
+						"{{base_url}}index",
+						"php"
+					],
+					"query": [
+						{
+							"key": "/api/v2/get_milestones/{{project_id}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create milestone",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{login}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"six\",\n    \"due_on\": 2423423,\n    \"description\": \"just another milestone\",\n    \"is_completed\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}index.php?/api/v2/add_milestone/{{project_id}}",
+					"host": [
+						"{{base_url}}index",
+						"php"
+					],
+					"query": [
+						{
+							"key": "/api/v2/add_milestone/{{project_id}}",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update milestone",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{login}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"is_completed\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}index.php?/api/v2/update_milestone/5",
+					"host": [
+						"{{base_url}}index",
+						"php"
+					],
+					"query": [
+						{
+							"key": "/api/v2/update_milestone/5",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{login}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}index.php?/api/v2/delete_milestone/6",
+					"host": [
+						"{{base_url}}index",
+						"php"
+					],
+					"query": [
+						{
+							"key": "/api/v2/delete_milestone/6",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
